@@ -18,9 +18,63 @@
 }
 </style>
 
+<style>
+  /* Timeline styles */
+  .timeline {
+    position: relative;
+    width: 80%;
+    margin: 20px auto;
+    height: 600px;
+    overflow: hidden;
+}
+
+.timeline .timeline-line {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.timeline .container {
+    position: absolute;
+    width: 40%;
+    padding: 10px;
+}
+
+.timeline .container.left {
+    left: 5%;
+    transform: translateX(-5%);
+}
+
+.timeline .container.right {
+    right: 5%;
+    transform: translateX(5%);
+}
+
+.timeline .content {
+    padding: 20px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+    z-index: 100;
+}
+
+.timeline .container:nth-child(2) .content {
+    top: 0;
+}
+
+.timeline .container:nth-child(3) .content {
+    top: 150px;
+}
+
+.timeline .container:nth-child(4) .content {
+    top: 300px;
+}
+
+</style>
 
 
-<link rel="alternate" type="application/rss+xml" href="../feed.xml" title="Fun">
+
+<link rel="alternate" type="application/rss+xml" href="../feed.xml" title="Timeline">
 
 
 
@@ -98,88 +152,19 @@ MathJax = {
 </script>
 
 <meta name="twitter:card" content="summary" />
-<meta name="twitter:title" content="Fun" />
+<meta name="twitter:title" content="Economics" />
 <meta name="twitter:image" content="http://vitalik.ca/images/icon.png" />
 
 
-<title> Fun </title>
+<title> Timeline </title>
 <br>
-<center><h1 style="border-bottom:0px"> Fun </h1></center>
+<center><h1 style="border-bottom:0px"> Info </h1></center>
 
 <center><hr>
-  <span class="toc-category" style="font-size:70%"><a href="./categories/politics.html">Politics</a></span>
-  <span class="toc-category" style="font-size:100%"><a href="./categories/society.html">Society</a></span>
-  <span class="toc-category" style="font-size:94%"><a href="./categories/economics.html">Economics</a></span>
-  <span class="toc-category" style="font-size:100%"><a href="./categories/fun.html">Fun</a></span>
-  <span class="toc-category" style="font-size:100%"><a href="./categories/general.html">General</a></span>
-  <span class="toc-category" style="font-size:85%"><a href="./categories/philosophy.html">Philosophy</a></span>
-  <span class="toc-category" style="font-size:85%"><a href="./categories/education.html">Personal Education</a></span>
+  <span class="toc-category" style="font-size:100%"><a href="../index.html">Blog</a></span>
+  <span class="toc-category" style="font-size:100%"><a href="projects.html">Projects</a></span>
+  <span class="toc-category" style="font-size:100%"><a href="timeline.html"> Timeline </a></span>
 <hr></center>
 
 <br>
 <ul class="post-list" style="padding-left:0">
-
-
-
-<li>
-    <span class="post-meta">2024 Apr 01</span>
-    <h3 style="margin-top:12px">
-      <a class="post-link" href="../general/2024/04/01/dc.html">Degen communism: the only correct political ideology</a>
-    </h3>
-</li>
-
-
-
-<li>
-    <span class="post-meta">2023 Apr 14</span>
-    <h3 style="margin-top:12px">
-      <a class="post-link" href="../general/2023/04/14/traveltime.html">Travel time ~= 750 * distance ^ 0.6</a>
-    </h3>
-</li>
-
-
-
-<li>
-    <span class="post-meta">2022 Jun 20</span>
-    <h3 style="margin-top:12px">
-      <a class="post-link" href="../general/2022/06/20/backpack.html">My 40-liter backpack travel guide</a>
-    </h3>
-</li>
-
-
-
-<li>
-    <span class="post-meta">2022 Apr 01</span>
-    <h3 style="margin-top:12px">
-      <a class="post-link" href="../general/2022/04/01/maximalist.html">In Defense of Bitcoin Maximalism</a>
-    </h3>
-</li>
-
-
-
-<li>
-    <span class="post-meta">2019 Dec 24</span>
-    <h3 style="margin-top:12px">
-      <a class="post-link" href="../general/2019/12/24/christmas.html">Christmas Special</a>
-    </h3>
-</li>
-
-
-
-<li>
-    <span class="post-meta">2019 Oct 01</span>
-    <h3 style="margin-top:12px">
-      <a class="post-link" href="../general/2019/10/01/story.html">In-person meatspace protocol to prove unconditional possession of a private key</a>
-    </h3>
-</li>
-
-
-
-<li>
-    <span class="post-meta">2019 Apr 01</span>
-    <h3 style="margin-top:12px">
-      <a class="post-link" href="../general/2019/04/01/cantor.html">[Mirror] Cantor was Wrong: debunking the infinite set hierarchy</a>
-    </h3>
-</li>
-
- </ul> 
