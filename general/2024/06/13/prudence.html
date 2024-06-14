@@ -1,0 +1,115 @@
+
+
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<style>
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #1c1c1c;
+        color: white;
+    }
+    .markdown-body table tr {
+        background-color: #1c1c1c;
+    }
+    .markdown-body table tr:nth-child(2n) {
+        background-color: black;
+    }
+}
+</style>
+
+
+
+<link rel="alternate" type="application/rss+xml" href="../../../../feed.xml" title="">
+
+
+
+<link rel="stylesheet" type="text/css" href="../../../../css/common-vendor.b8ecfc406ac0b5f77a26.css">
+<link rel="stylesheet" type="text/css" href="../../../../css/fretboard.f32f2a8d5293869f0195.css">
+<link rel="stylesheet" type="text/css" href="../../../../css/pretty.0ae3265014f89d9850bf.css">
+<link rel="stylesheet" type="text/css" href="../../../../css/pretty-vendor.83ac49e057c3eac4fce3.css">
+<link rel="stylesheet" type="text/css" href="../../../../css/global.css">
+<link rel="stylesheet" type="text/css" href="../../../../css/misc.css">
+
+<script type="text/x-mathjax-config">
+<script>
+MathJax = {
+  tex: {
+    inlineMath: [['$', '$'], ['\(', '\)']]
+  },
+  svg: {
+    fontCache: 'global',
+  }
+};
+</script>
+<script type="text/javascript" id="MathJax-script" async
+  src="../../../../scripts/tex-svg.js">
+</script>
+
+<style>
+</style>
+
+<div id="doc" class="container-fluid markdown-body comment-enabled" data-hard-breaks="true">
+
+<div id="color-mode-switch">
+  <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+    <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
+  </svg>
+  <input type="checkbox" id="switch" />
+  <label for="switch">Dark Mode Toggle</label>
+  <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+    <path stroke-linecap="round" stroke-linejoin="round" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
+  </svg>
+</div>
+
+<script type="text/javascript">
+  // Update root html class to set CSS colors
+  const toggleDarkMode = () => {
+    const root = document.querySelector('html');
+    root.classList.toggle('dark');
+  }
+
+  // Update local storage value for colorScheme
+  const toggleColorScheme = () => {
+    const colorScheme = localStorage.getItem('colorScheme');
+    if (colorScheme === 'light') localStorage.setItem('colorScheme', 'dark');
+    else localStorage.setItem('colorScheme', 'light');
+  }
+
+  // Set toggle input handler
+  const toggle = document.querySelector('#color-mode-switch input[type="checkbox"]');
+  if (toggle) toggle.onclick = () => {
+    toggleDarkMode();
+    toggleColorScheme();
+  }
+
+  // Check for color scheme on init
+  const checkColorScheme = () => {
+    const colorScheme = localStorage.getItem('colorScheme');
+    // Default to light for first view
+    if (colorScheme === null || colorScheme === undefined) localStorage.setItem('colorScheme', 'light');
+    // If previously saved to dark, toggle switch and update colors
+    if (colorScheme === 'dark') {
+      toggle.checked = true;
+      toggleDarkMode();
+    }
+  }
+  checkColorScheme();
+</script>
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:title" content="" />
+<meta name="twitter:image" content="" />
+
+<h1><a id="the-optimstic-prudence-bias" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>the optimstic prudence bias</h1>
+<p>Opinion writers and pundits like Noah Smith and Matthew Yglesias are generally smart and creative people. One observation I've made from reading and following many of them is that they tend to be optimistic in many of their opinions.</p>
+<p>However, there are times when their optimism seems forced, or when their focus on the positive causes them to overlook important issues and dismiss valid concerns. This observation makes me self-evaluate my own criticisms: am I naturally pessimistic? I think I am a little bit, but I also think there's something else at play. I believe many writers choose to be optimistic for moral, philosophical, and strategic reasons, which at times can create an inherent bias. I call this the optimstic prudence bias.</p>
+<p>Writers and pundits are creatives. They reflect on the nature of their work and aim to have a positive impact on the world. Writing is a form of thought leadership, and generally, writers strive to be optimistic and hopeful. They understand that focusing on concerns, worries, or doom is neither productive nor helpful. And To solve problems effectively, it is often better to be optimistic, as it motivates one to fight to maintain a positive vision rather than succumbing to gloom.</p>
+<p>These optimistic writers are responsible thinkers. They understand that our belief systems impact our reality; when we believe something, we look for evidence to support it—this is known as confirmation bias. Searching for evidence strengthens the belief and makes it more ingrained, regardless of its truth. Therefore, forming optimistic beliefs and seeking evidence to support them is a good principle in general as it supports mental health and positive behaivor. For instance, if you believe in American prosperity, your behavior will reflect this belief.</p>
+<p>Writers also understand the importance of narratives and how positive and negative stories can impact our mental health. They know that political thinking can strongly affect mental health. When people adopt negative beliefs and narratives, it can strongly influence their mental health. Writers try to avoid delving too deeply into negativity to protect their own mental health and that of their readers.</p>
+<p>When writers do have concerns, responsible ones will thoroughly consider whether to share them. They collect ample evidence and analysis to discern whether their concerns warrant publication. For example, when Noah Smith wrote about his concerns regarding China, It's likely he felt strongly that people weren’t worried enough. By publishing his concerns about geopolitical conflict, he hoped to foster positive discourse and focus on an issue he felt was important.</p>
+<p>However, since writers feel the need to collect extensive analysis and evidence before publishing their concerns to be responsible, it limits the quantity and depth of their analysis on issues of concern.</p>
+<p>Responsible writers also often rely strictly on data to guide their worldview and opinion making. This approach is generally desirable, as using data to make decisions is responsible and inspires confidence that writers are seeking the truth rather than pushing an ideological viewpoint.</p>
+<p>However, sometimes these pundits discount anecdotal data and personal stories. There is valuable information in talking to people. For instance, the median income in America might look good on paper, but understanding the complexities of workers' environments, management, living conditions, and social lives provides a fuller picture. This type of nuanced analysis is sometimes overlooked, and skimmed over by paiting a optimistic narrative of life in america.</p>
+<p>So in short, The Optimistic Prudence Bias is a cognitive tendency observed in writers and pundits who strive to maintain an optimistic outlook while being judicious and responsible in their analysis and publication of concerns. Prudent and responsible writers often choose to focus on positive aspects and hopeful perspectives, believing that optimism is more productive and motivational for both themselves and their readers. Prudent Writers feel a moral and ethical responsibility to thoroughly vet their concerns before publishing them. Prudent Writers want to reinforce positive belief systems and positive narratives in their readers, which can shape their reality, behavior, and mental health. And by focusing more on quantifiable data rather than anecdotal evidence—both being legitimate forms of data— prudent writers tend to lean towards more optimistic viewpoints.</p>
+<p>What do you think?</p>
