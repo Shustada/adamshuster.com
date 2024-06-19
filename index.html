@@ -145,6 +145,11 @@ MathJax = {
     }
   }
   checkColorScheme();
+
+  function redirectToGithub() {
+      window.location.href = 'https://www.github.com/shustada/steward';
+  }
+ 
 </script>
 
 <meta name="twitter:card" content="summary" />
@@ -178,8 +183,8 @@ MathJax = {
 
 
     
-     <div class="project-card" > 
-        <img src="static/steward.png" alt="Project Image" class="project-image">
+    <div class="project-card" onclick="redirectToGithub()">        
+      <img src="static/steward.png" alt="Project Image" class="project-image">
         <div class="project-info">
         <h3>Steward</h3>
         <p> Django Web App Project</p>
