@@ -1,5 +1,4 @@
 
-
 <!DOCTYPE html>
 <html>
 <meta charset="UTF-8">
@@ -16,6 +15,57 @@
         background-color: black;
     }
 }
+</style>
+
+<style>
+    .project-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+.project-card {
+  margin: 10px;
+  width: calc(50% - 20px);
+  transition: transform 0.2s;
+}
+
+.project-card:hover {
+  transform: scale(1.05);
+}
+
+.project-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.project-info {
+  padding: 15px;
+}
+
+.project-info h3 {
+  margin-top: 0;
+  color: #333;
+}
+
+.project-info p {
+  color: #666;
+  font-size: 14px;
+}
+
+.project-card .project-image {
+  /* Make the image take up the full height of the div */
+    object-fit: contain; /* Ensure the entire image is visible */
+}
+
+@media (max-width: 768px) {
+  .project-card {
+    width: calc(100% - 20px);
+  }
+}
+
 </style>
 
 
@@ -95,6 +145,11 @@ MathJax = {
     }
   }
   checkColorScheme();
+
+  function redirectToGithub() {
+      window.location.href = 'https://www.github.com/shustada/steward';
+  }
+ 
 </script>
 
 <meta name="twitter:card" content="summary" />
@@ -104,8 +159,7 @@ MathJax = {
 
 <title> Adam Shuster Dot Com </title>
 <br>
-<center><h1 style="border-bottom:0px"> Adam Shuster Dot Com</h1>
-</center>
+<center><h1 style="border-bottom:0px"> Adam Shuster Dot Com </h1></center>
 
 <center><hr>
 <span class="toc-category" style="font-size:100%"><a href="../index.html">Home</a></span>
@@ -113,47 +167,31 @@ MathJax = {
 <span class="toc-category" style="font-size:100%"><a href="links.html"> Links </a></span>
 <span class="toc-category" style="font-size:100%"><a href="projects.html"> Projects </a></span>
 <hr></center>
-
 <ul class="post-list" style="padding-left:0">
+
 <center>
 
-  <!-- <li>
-    <span class="post-meta">2024 May 08</span>
-    <h3 style="margin-top:12px">
-      <a class="post-link" href="../general/2024/05/08/django.html"> </a>
-    </h3>
-</li> -->
+<center><h3>Projects</h3></center>
 
-<li>
-  <span class="post-meta">2024 June 13</span>
-  <h3 style="margin-top:12px">
-    <a class="post-link" href="../general/2024/06/13/prudence.html"> The Prudent Optimism Bias</a>
-  </h3>
-</li>
+<div class="project-container">
+    <div class="project-card" onclick="location.href='./pages/blog.html'">
+        <img src="../static/blog.webp" alt="Project Image">
+        <div class="project-info">
+        <h3>Blog</h3>
+        <p> Disclaimer: I take my opinions (and myself) lightly. </p>
+        </div>
+    </div>
 
 
-  <li>
-    <span class="post-meta">2024 May 05</span>
-    <h3 style="margin-top:12px">
-      <a class="post-link" href="../general/2024/05/05/mindwork.html"> Mindfulness and Work</a>
-    </h3>
-</li>
+    
+    <div class="project-card" onclick="redirectToGithub()">        
+      <img src="../static/steward.png" alt="Project Image" class="project-image">
+        <div class="project-info">
+        <h3>Steward</h3>
+        <p> Django Web App Project</p>
+        </div>
+    </div> 
 
-<li>
-    <span class="post-meta">2024 May 01</span>
-    <h3 style="margin-top:12px">
-      <a class="post-link" href="../general/2024/05/01/VR.html"> Virtual Reality to treat SAD</a>
-    </h3>
-</li>
+</div>
 
-
-
-<li>
-    <span class="post-meta">2024 Apr 18</span>
-    <h3 style="margin-top:12px">
-      <a class="post-link" href="../general/2024/04/18/rail.html">Baltimore's Rail-Based Cataylst</a>
-    </h3>
-</li>
-
-</center>
-
+ <!-- onclick="location.href='http://offtherailz.org'" -->
