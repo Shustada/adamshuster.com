@@ -1,82 +1,16 @@
+
 <!DOCTYPE html>
 <html>
-<head>
 <meta charset="UTF-8">
-<style>
-/* General Styles */
-body {
-    font-family: Arial, sans-serif;
-    font-size: 18px;
-    line-height: 1.6;
-    padding: 20px;
-    background-color: #f5f5dc; /* Light book-like background color */
-    color: #333; /* Darker text color for readability */
-}
 
-h1 {
-    text-align: center;
-    border-bottom: 2px solid #ccc;
-    padding-bottom: 10px;
-    margin-bottom: 20px;
-}
+<!-- External Sheets -->
+<link rel="stylesheet" type="text/css" href="./css/common-vendor.b8ecfc406ac0b5f77a26.css">
+<link rel="stylesheet" type="text/css" href="./css/fretboard.f32f2a8d5293869f0195.css">
+<link rel="stylesheet" type="text/css" href="./css/pretty.0ae3265014f89d9850bf.css">
+<link rel="stylesheet" type="text/css" href="./css/pretty-vendor.83ac49e057c3eac4fce3.css">
+<link rel="stylesheet" type="text/css" href="./css/global.css">
+<link rel="stylesheet" type="text/css" href="./css/misc.css">
 
-h3 {
-    margin-top: 20px;
-    font-weight: bold;
-}
-
-.post-meta {
-    color: #888;
-    font-size: 14px;
-}
-
-.post-link {
-    color: #1a73e8;
-    text-decoration: none;
-}
-
-.post-link:hover {
-    text-decoration: underline;
-}
-
-#color-mode-switch {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 20px;
-}
-
-#color-mode-switch svg {
-    margin: 0 10px;
-}
-
-#color-mode-switch label {
-    margin: 0 10px;
-}
-
-.toc-category {
-    margin: 0 15px;
-}
-
-/* Dark mode adjustments */
-@media (prefers-color-scheme: dark) {
-    body {
-        background-color: #121212;
-        color: #e0e0e0;
-    }
-    .markdown-body table tr {
-        background-color: #1c1c1c;
-    }
-    .markdown-body table tr:nth-child(2n) {
-        background-color: #2b2b2b;
-    }
-    .post-link {
-        color: #8ab4f8;
-    }
-}
-</style>
-</head>
-<body>
 
 <div id="doc" class="container-fluid markdown-body comment-enabled" data-hard-breaks="true">
 
@@ -91,96 +25,232 @@ h3 {
   </svg>
 </div>
 
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:title" content="Adam Shuster Dot Com" />
+<meta name="twitter:image" content="" />
+
+
+<title> Adam Shuster Dot Com </title>
+<br>
+<center><h1 style="border-bottom:0px"> Adam Shuster Dot Com</h1>
+</center>
+
+<center><hr>
+<span class="toc-category" style="font-size:100%"><a href="../index.html">Home</a></span>
+<span class="toc-category" style="font-size:100%"><a href="blog.html">Blog</a></span>
+<span class="toc-category" style="font-size:100%"><a href="links.html"> Links </a></span>
+<span class="toc-category" style="font-size:100%"><a href="projects.html"> Projects </a></span>
+<hr>
+</center>
+
+<div class="navbar">
+    <div class="dropdown">
+        <button class="dropbtn">Categories</button>
+        <div class="dropdown-content">
+            <a href="#" onclick="filterPosts('all')">All</a>
+            <a href="#" onclick="filterPosts('self')">Personal</a>
+            <a href="#" onclick="filterPosts('society')">Policy</a>
+            <a href="#" onclick="filterPosts('reviews')">Book Reviews</a>
+            <a href="#" onclick="filterPosts('theory')">Theories</a>
+        </div>
+    </div> 
+</div>
+
+<script>
+    function filterPosts(category) {
+      const posts = document.querySelectorAll('.post-list li');
+      posts.forEach(post => {
+        if (category === 'all' || post.getAttribute('data-category').includes(category)) {
+          post.style.display = '';
+        } else {
+          post.style.display = 'none';
+        }
+      });
+    }
+    </script>
+
+
+<ul class="post-list" style="padding-left:0">
+    <center>
+    <li data-category="site">
+        <span class="post-meta">2024 July 04</span>
+        <h3 style="margin-top:12px">
+            <a class="post-link" href="general/2024/07/04/site.html"> This Site's Set-up</a>
+        </h3>
+    </li>
+        
+    
+    <li data-category="theory">
+      <span class="post-meta">2024 June 13</span>
+      <h3 style="margin-top:12px">
+        <a class="post-link" href="general/2024/06/13/prudence.html"> The Prudent Optimism Bias</a>
+      </h3>
+    </li>
+    
+    <li data-category="self">
+        <span class="post-meta">2024 May 05</span>
+        <h3 style="margin-top:12px">
+          <a class="post-link" href="general/2024/05/05/mindwork.html"> Mindfulness and Work</a>
+        </h3>
+    </li>
+    
+    <li data-category="self">
+        <span class="post-meta">2024 May 01</span>
+        <h3 style="margin-top:12px">
+          <a class="post-link" href="general/2024/05/01/VR.html"> Virtual Reality to treat SAD</a>
+        </h3>
+    </li>
+    
+    <li data-category="theory">
+        <span class="post-meta">2024 Apr 18</span>
+        <h3 style="margin-top:12px">
+          <a class="post-link" href="general/2024/04/18/rail.html">Baltimore's Rail-Based Cataylst</a>
+        </h3>
+    </li>
+    
+    </center>
+    </ul>
+
+
+<!--Javascript -->  
 <script type="text/javascript">
-  // Update root html class to set CSS colors
-  const toggleDarkMode = () => {
+    // Update root html class to set CSS colors
+    const toggleDarkMode = () => {
     const root = document.querySelector('html');
     root.classList.toggle('dark');
-  }
+    }
 
-  // Update local storage value for colorScheme
-  const toggleColorScheme = () => {
+    // Update local storage value for colorScheme
+    const toggleColorScheme = () => {
     const colorScheme = localStorage.getItem('colorScheme');
     if (colorScheme === 'light') localStorage.setItem('colorScheme', 'dark');
     else localStorage.setItem('colorScheme', 'light');
-  }
+    }
 
-  // Set toggle input handler
-  const toggle = document.querySelector('#color-mode-switch input[type="checkbox"]');
-  if (toggle) toggle.onclick = () => {
+    // Set toggle input handler
+    const toggle = document.querySelector('#color-mode-switch input[type="checkbox"]');
+    if (toggle) toggle.onclick = () => {
     toggleDarkMode();
     toggleColorScheme();
-  }
+    }
 
-  // Check for color scheme on init
-  const checkColorScheme = () => {
+    // Check for color scheme on init
+    const checkColorScheme = () => {
     const colorScheme = localStorage.getItem('colorScheme');
     // Default to light for first view
     if (colorScheme === null || colorScheme === undefined) localStorage.setItem('colorScheme', 'light');
     // If previously saved to dark, toggle switch and update colors
     if (colorScheme === 'dark') {
-      toggle.checked = true;
-      toggleDarkMode();
+        toggle.checked = true;
+        toggleDarkMode();
     }
-  }
-  checkColorScheme();
+    }
+    checkColorScheme();
 </script>
 
-<meta name="twitter:card" content="summary" />
-<meta name="twitter:title" content="Adam Shuster Dot Com" />
-<meta name="twitter:image" content="" />
+<style>
+    @media (prefers-color-scheme: dark) {
+        body {
+            background-color: #1c1c1c;
+            color: white;
+        }
+        .markdown-body table tr {
+            background-color: #1c1c1c;
+        }
+        .markdown-body table tr:nth-child(2n) {
+            background-color: black;
+        }
+    }
+    </style>
 
-<title> Adam Shuster Dot Com </title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #fff; /* white background */
+        color: #000; /* black text */
+        margin: 0;
+        padding: 0;
+    }
 
-<center><h1> Adam Shuster Dot Com</h1></center>
+    /* Styling for the navigation bar */
+    .navbar {
+        text-align: center;
+        background-color: #fff; /* white background */
+    }
 
-<center>
-<hr>
-<span class="toc-category"><a href="../index.html">Home</a></span>
-<span class="toc-category"><a href="blog.html">Blog</a></span>
-<span class="toc-category"><a href="links.html"> Links </a></span>
-<hr>
-</center>
+    /* Style for the dropdown button */
+    .dropdown {
+        display: inline-block;
+        position: relative; /* Ensures correct positioning of dropdown content */
+    }
 
-<ul class="post-list">
-<center>
+    .dropbtn {
+        background-color: #fff; /* Background color */
+        color: #007bff; /* Blue text */
+        padding: 10px 20px;
+        font-size: 16px;
+        border: 2px solid #007bff; /* Blue border */
+        cursor: pointer;
+    }
 
-<li>
-  <span class="post-meta">2024 June 13</span>
-  <h3><a class="post-link" href="../general/2024/06/13/prudence.html">The Prudent Optimism Bias</a></h3>
-</li>
+    /* Dropdown content (hidden by default) */
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #fff; /* White background */
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.1); /* Light shadow for depth */
+        z-index: 1;
+    }
 
-<li>
-  <span class="post-meta">2024 May 05</span>
-  <h3><a class="post-link" href="../general/2024/05/05/mindwork.html">Mindfulness and Work</a></h3>
-</li>
+    /* Links inside the dropdown */
+    .dropdown-content a {
+        color: #007bff; /* Blue links */
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+    }
 
-<li>
-  <span class="post-meta">2024 May 01</span>
-  <h3><a class="post-link" href="../general/2024/05/01/VR.html">Virtual Reality to treat SAD</a></h3>
-</li>
+    /* Hover effects */
+    .dropdown-content a:hover {
+        background-color: #f2f2f2; /* Light grey background */
+    }
 
-<li>
-  <span class="post-meta">2024 Apr 18</span>
-  <h3><a class="post-link" href="../general/2024/04/18/rail.html">Baltimore's Rail-Based Catalyst</a></h3>
-</li>
+    .dropdown:hover .dropdown-content {
+        display: block; /* Display dropdown content on hover */
+    }
 
-</center>
-</ul>
+    .dropdown:hover .dropbtn {
+        background-color: #f2f2f2; /* Light grey background for button on hover */
+    }
+</style>
 
-<h1>The Prudent Optimism Bias</h1>
-<p>Opinion writers and pundits like Noah Smith and Matthew Yglesias are generally smart and creative people. One observation I've made from reading and following many of them is that they tend to be optimistic in many of their opinions.</p>
-<p>However, there are times when their optimism seems forced, or when their focus on the positive causes them to overlook important issues and dismiss valid concerns. This observation makes me self-evaluate my own criticisms: am I naturally pessimistic? I think I am a little bit, but I also think there's something else at play. I believe many writers choose to be optimistic for moral, philosophical, and strategic reasons, which at times can create an inherent bias. I call this the Prudent Optimism Bias.</p>
-<p>Writers and pundits are creatives. They reflect on the nature of their work and aim to have a positive impact on the world. Writing is a form of thought leadership, and generally, writers strive to be optimistic and hopeful. They understand that focusing on concerns, worries, or doom is neither productive nor helpful. And To solve problems effectively, it is often better to be optimistic, as it motivates one to fight to maintain a positive vision rather than succumbing to gloom.</p>
-<p>These optimistic writers are responsible thinkers. They understand that our belief systems impact our reality; when we believe something, we look for evidence to support it—this is known as confirmation bias. Searching for evidence strengthens the belief and makes it more ingrained, regardless of its truth. Therefore, forming optimistic beliefs and seeking evidence to support them is a good principle in general as it supports mental health and positive behaivor.</p>
-<p>Writers also understand the importance of narratives and how positive and negative stories can impact our mental health. Writers try to avoid delving too deeply into negativity to protect their own mental health and that of their readers.</p>
-<p>When writers do have concerns, responsible ones will thoroughly collect ample evidence and analysis to discern whether their concerns warrant publication. For example, when Noah Smith wrote about his concerns regarding China, It's likely he felt strongly that people weren’t worried enough. By publishing his concerns about geopolitical conflict, he hoped to foster positive discourse and focus on an issue he felt was important.</p>
-<p>However, since writers feel the need to collect extensive analysis and evidence before publishing their concerns to be responsible, it limits the quantity and depth of their analysis on issues of concern.</p>
-<p>Responsible writers also often rely strictly on data to guide their worldview and opinion making. This approach is generally desirable, as using data to make decisions is responsible and inspires confidence that writers are seeking the truth rather than pushing an ideological viewpoint.</p>
-<p>However, sometimes these pundits discount anecdotal data and personal stories. There is valuable information in talking to people. For instance, the median income in America might look good on paper, but understanding the complexities of workers' environments, management, living conditions, and social lives provides a fuller picture. This type of nuanced analysis is sometimes overlooked, and skimmed over by paiting a optimistic narrative of life in america.</p>
-<p>Writers are also keenly aware of the irrational negativity prevalent in the online world and political discourse. Politics often serves as a conduit for expressing personal dissatisfaction and upset feelings. The online world is intensely negative, and much of this negativity does not reflect the real world. Therefore, writers try to counterbalance this irrational negativity with optimistic takes. It has become more fashionable to be optimistic, especially online.</p>
-<p>To summarize: The Prudent Optimism bias is a cognitive tendency observed in writers and pundits who strive to maintain an optimistic outlook while being judicious and responsible in their analysis and publication of concerns. Prudent and responsible writers often choose to focus on positive aspects and hopeful perspectives, believing that optimism is more productive and motivational for both themselves and their readers. Prudent Writers feel a moral and ethical responsibility to thoroughly vet their concerns before publishing them. Prudent Writers want to reinforce positive belief systems and positive narratives in their readers, which can shape their reality, behavior, and mental health. And by focusing more on quantifiable data rather than anecdotal evidence—both being legitimate forms of data— prudent writers tend to lean towards more optimistic viewpoints.</p>
-<p>What do you think?</p>
 
-</body>
-</html>
+<script type="text/x-mathjax-config">
+<script>
+MathJax = {
+  tex: {
+    inlineMath: [['$', '$'], ['\(', '\)']]
+  },
+  svg: {
+    fontCache: 'global',
+  }
+};
+</script>
+<script type="text/javascript" id="MathJax-script" async
+  src="./scripts/tex-svg.js">
+</script>
+
+<script>
+    function filterPosts(category) {
+      const posts = document.querySelectorAll('.post-list li');
+      posts.forEach(post => {
+        if (category === 'all' || post.getAttribute('data-category').includes(category)) {
+          post.style.display = '';
+        } else {
+          post.style.display = 'none';
+        }
+      });
+    }
+    </script>
