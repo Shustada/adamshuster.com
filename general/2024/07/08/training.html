@@ -1,0 +1,113 @@
+
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<style>
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #1c1c1c;
+        color: white;
+    }
+    .markdown-body table tr {
+        background-color: #1c1c1c;
+    }
+    .markdown-body table tr:nth-child(2n) {
+        background-color: black;
+    }
+}
+</style>
+
+
+
+<link rel="alternate" type="application/rss+xml" href="../../../../feed.xml" title="">
+
+
+
+<link rel="stylesheet" type="text/css" href="../../../../css/common-vendor.b8ecfc406ac0b5f77a26.css">
+<link rel="stylesheet" type="text/css" href="../../../../css/fretboard.f32f2a8d5293869f0195.css">
+<link rel="stylesheet" type="text/css" href="../../../../css/pretty.0ae3265014f89d9850bf.css">
+<link rel="stylesheet" type="text/css" href="../../../../css/pretty-vendor.83ac49e057c3eac4fce3.css">
+<link rel="stylesheet" type="text/css" href="../../../../css/global.css">
+<link rel="stylesheet" type="text/css" href="../../../../css/misc.css">
+
+<script type="text/x-mathjax-config">
+<script>
+MathJax = {
+  tex: {
+    inlineMath: [['$', '$'], ['\(', '\)']]
+  },
+  svg: {
+    fontCache: 'global',
+  }
+};
+</script>
+<script type="text/javascript" id="MathJax-script" async
+  src="../../../../scripts/tex-svg.js">
+</script>
+
+<style>
+</style>
+
+<div id="doc" class="container-fluid markdown-body comment-enabled" data-hard-breaks="true">
+
+<div id="color-mode-switch">
+  <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+    <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
+  </svg>
+  <input type="checkbox" id="switch" />
+  <label for="switch">Dark Mode Toggle</label>
+  <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+    <path stroke-linecap="round" stroke-linejoin="round" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
+  </svg>
+</div>
+
+<script type="text/javascript">
+  // Update root html class to set CSS colors
+  const toggleDarkMode = () => {
+    const root = document.querySelector('html');
+    root.classList.toggle('dark');
+  }
+
+  // Update local storage value for colorScheme
+  const toggleColorScheme = () => {
+    const colorScheme = localStorage.getItem('colorScheme');
+    if (colorScheme === 'light') localStorage.setItem('colorScheme', 'dark');
+    else localStorage.setItem('colorScheme', 'light');
+  }
+
+  // Set toggle input handler
+  const toggle = document.querySelector('#color-mode-switch input[type="checkbox"]');
+  if (toggle) toggle.onclick = () => {
+    toggleDarkMode();
+    toggleColorScheme();
+  }
+
+  // Check for color scheme on init
+  const checkColorScheme = () => {
+    const colorScheme = localStorage.getItem('colorScheme');
+    // Default to light for first view
+    if (colorScheme === null || colorScheme === undefined) localStorage.setItem('colorScheme', 'light');
+    // If previously saved to dark, toggle switch and update colors
+    if (colorScheme === 'dark') {
+      toggle.checked = true;
+      toggleDarkMode();
+    }
+  }
+  checkColorScheme();
+</script>
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:title" content="" />
+<meta name="twitter:image" content="" />
+
+<h1><a id="enhancing-workforce-skills-through-public-sector-employment" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>Enhancing Workforce Skills Through Public Sector Employment</h1>
+<p>I'd like to sketch out an idea I’ve been contemplating for a while. Traditionally, we view education through the lens of our educational institutions, seeing it as something you receive by attending these institutions—the conduits through which learning happens, the portals to becoming educated.</p>
+<p>However, one of the ways workers acquire skills and gain education related to their work is simply by doing the work and being paid for it. Not everyone knows how to fix cars and diagnose problems, but if someone paid you to learn how to fix cars and you did this for a year, by the end of that year, you'd likely be quite knowledgeable about car repair. This concept of learning by doing is how most people acquire hard skills.</p>
+<p>For example, are you currently an Excel expert? Do you know all the formulas and computations for data analysis? Most people don’t. While many of us have used Excel at some point, to truly master its capabilities, one would need to use it consistently. If someone paid you to perform data analysis in Excel for a year, you'd become highly skilled at it.</p>
+<p>Now, let’s connect this to public sector employment. Both private and public sector employers compete for workers, ideally maintaining a balance where workers find both sectors comparable in terms of job quality, benefits, and so on. However, there are times when this balance is disrupted. For instance, if public sector jobs offer higher wages, greater job stability, less stress, and decreased work difficulty, these jobs are likely to attract talent, effectively siphoning candidates from the private sector.</p>
+<p>This leads to my idea: public sector employment can and should support the private sector by training workers and providing them with skills. The government has the ability to generate positive externalities for the workforce. Perhaps one of its responsibilities should be to employ workers in skilled positions at low/modest wages, allowing private sector employers to recruit these workers once they have acquired sufficient skills.</p>
+<p>The government already plays a significant role in preparing workers for employment by funding loans for education, K-12 education, and higher education. However, we might not be as effective at this as we could be.</p>
+<p>Consider this example: over the next decade, as our energy grid becomes electrified and the US transitions from fossil fuels to solar energy, the government can offer low/modest-wage jobs to workers interested in learning these skills. This would create a pool of highly talented workers for the private sector to recruit.</p>
+<p>This is the idea behind apprenticeships, which have seen broader support over the past decade. Numerous programs are involved in workforce training, and state, local, and federal employers understand their role in this process. However, there are times when the government doesn’t fully utilize its ability to provide positive externalities by simply hiring people to do skilled work.</p>
+<p>By hiring individuals to perform skilled work at low/modest wages, multiple benefits arise. Workers gain valuable skills they can later leverage for higher wages in the private sector. The government keeps costs down by employing labor at lower wages. Additionally, the government provides a positive externality by training the workforce, helping workers, efficiently using taxpayer dollars, and assisting employers in hiring skilled workers.</p>
+<p>This seems somewhat sensible.</p>
