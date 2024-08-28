@@ -1,0 +1,111 @@
+
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<style>
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #1c1c1c;
+        color: white;
+    }
+    .markdown-body table tr {
+        background-color: #1c1c1c;
+    }
+    .markdown-body table tr:nth-child(2n) {
+        background-color: black;
+    }
+}
+</style>
+
+
+
+<link rel="alternate" type="application/rss+xml" href="../../../../feed.xml" title="">
+
+
+
+<link rel="stylesheet" type="text/css" href="../../../../css/common-vendor.b8ecfc406ac0b5f77a26.css">
+<link rel="stylesheet" type="text/css" href="../../../../css/fretboard.f32f2a8d5293869f0195.css">
+<link rel="stylesheet" type="text/css" href="../../../../css/pretty.0ae3265014f89d9850bf.css">
+<link rel="stylesheet" type="text/css" href="../../../../css/pretty-vendor.83ac49e057c3eac4fce3.css">
+<link rel="stylesheet" type="text/css" href="../../../../css/global.css">
+<link rel="stylesheet" type="text/css" href="../../../../css/misc.css">
+
+<script type="text/x-mathjax-config">
+<script>
+MathJax = {
+  tex: {
+    inlineMath: [['$', '$'], ['\(', '\)']]
+  },
+  svg: {
+    fontCache: 'global',
+  }
+};
+</script>
+<script type="text/javascript" id="MathJax-script" async
+  src="../../../../scripts/tex-svg.js">
+</script>
+
+<style>
+</style>
+
+<div id="doc" class="container-fluid markdown-body comment-enabled" data-hard-breaks="true">
+
+<div id="color-mode-switch">
+  <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+    <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
+  </svg>
+  <input type="checkbox" id="switch" />
+  <label for="switch">Dark Mode Toggle</label>
+  <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+    <path stroke-linecap="round" stroke-linejoin="round" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
+  </svg>
+</div>
+
+<script type="text/javascript">
+  // Update root html class to set CSS colors
+  const toggleDarkMode = () => {
+    const root = document.querySelector('html');
+    root.classList.toggle('dark');
+  }
+
+  // Update local storage value for colorScheme
+  const toggleColorScheme = () => {
+    const colorScheme = localStorage.getItem('colorScheme');
+    if (colorScheme === 'light') localStorage.setItem('colorScheme', 'dark');
+    else localStorage.setItem('colorScheme', 'light');
+  }
+
+  // Set toggle input handler
+  const toggle = document.querySelector('#color-mode-switch input[type="checkbox"]');
+  if (toggle) toggle.onclick = () => {
+    toggleDarkMode();
+    toggleColorScheme();
+  }
+
+  // Check for color scheme on init
+  const checkColorScheme = () => {
+    const colorScheme = localStorage.getItem('colorScheme');
+    // Default to light for first view
+    if (colorScheme === null || colorScheme === undefined) localStorage.setItem('colorScheme', 'light');
+    // If previously saved to dark, toggle switch and update colors
+    if (colorScheme === 'dark') {
+      toggle.checked = true;
+      toggleDarkMode();
+    }
+  }
+  checkColorScheme();
+</script>
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:title" content="" />
+<meta name="twitter:image" content="" />
+
+<h2><a id="inflammation-and-depression" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>Inflammation and Depression</h2>
+<p>I've recently shifted my approach to managing depression, focusing more on inflammation.</p>
+<p>One crucial aspect I've come to be more attentive to is the connection between chronic stress and inflammation. Chronic stress can cause our immune system to go into overdrive. In the brain, this means that microglia—our brain's immune cells—can start producing too many inflammatory cytokines. These cytokines lead to neuroinflammation, which disrupts the production and transmission of key neurotransmitters like serotonin.</p>
+<p>What's even more concerning is how neuroinflammation can alter serotonin production itself. When the brain is inflamed, tryptophan—a vital precursor for serotonin—can be diverted into producing neurotoxic quinolinic acid instead of serotonin, worsening depressive symptoms. Chronic stress can also weaken the blood-brain barrier (BBB), making the brain more susceptible to inflammation and other harmful substances.</p>
+<p>It's important for those with a family history of immune disorders or allergies to be mindful of how inflammation can impact mental health. For instance, my brother has type 1 diabetes, and my mother has rheumatoid arthritis—both conditions linked to inflammation.</p>
+<p>I’ve long known that fish oil is beneficial for depression, but I only recently understood why. The EPA (eicosapentaenoic acid) in fish oil helps reduce inflammation and lowers the production of inflammatory cytokines. Some studies suggest that the antidepressant effects of fish oil can be comparable to standard antidepressants, but this requires consistent, high doses—around 1-2 grams of EPA per day. Many people might not realize that they aren’t taking fish oil in the right amounts to reap these benefits.</p>
+<p>For example, a common fish oil supplement like Nature Made Fish Oil contains about 360 mg of EPA in two capsules, which equals around 2400 mg of fish oil. To reach the recommended 1 gram of EPA, you’d need to take at least four capsules or choose a more concentrated supplement.</p>
+<p>I believe chronic stress is becoming increasingly prevalent in American society, almost to the point where it’s a constant presence for many. We need to recognize that stress isn’t just something people experience in short bursts anymore; for many, it’s ongoing and relentless. This shift demands that we rethink how we care for our bodies. Preventative measures to counteract the long-term effects of stress are more important than ever. Fish oil, for instance, should be considered a standard treatment for anyone dealing with persistent stress.</p>
+
