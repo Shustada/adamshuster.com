@@ -1,0 +1,116 @@
+
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<style>
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #1c1c1c;
+        color: white;
+    }
+    .markdown-body table tr {
+        background-color: #1c1c1c;
+    }
+    .markdown-body table tr:nth-child(2n) {
+        background-color: black;
+    }
+}
+</style>
+
+
+
+<link rel="alternate" type="application/rss+xml" href="../../../../feed.xml" title="">
+
+
+
+<link rel="stylesheet" type="text/css" href="../../../../css/common-vendor.b8ecfc406ac0b5f77a26.css">
+<link rel="stylesheet" type="text/css" href="../../../../css/fretboard.f32f2a8d5293869f0195.css">
+<link rel="stylesheet" type="text/css" href="../../../../css/pretty.0ae3265014f89d9850bf.css">
+<link rel="stylesheet" type="text/css" href="../../../../css/pretty-vendor.83ac49e057c3eac4fce3.css">
+<link rel="stylesheet" type="text/css" href="../../../../css/global.css">
+<link rel="stylesheet" type="text/css" href="../../../../css/misc.css">
+
+<script type="text/x-mathjax-config">
+<script>
+MathJax = {
+  tex: {
+    inlineMath: [['$', '$'], ['\(', '\)']]
+  },
+  svg: {
+    fontCache: 'global',
+  }
+};
+</script>
+<script type="text/javascript" id="MathJax-script" async
+  src="../../../../scripts/tex-svg.js">
+</script>
+
+<style>
+</style>
+
+<div id="doc" class="container-fluid markdown-body comment-enabled" data-hard-breaks="true">
+
+<div id="color-mode-switch">
+  <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+    <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
+  </svg>
+  <input type="checkbox" id="switch" />
+  <label for="switch">Dark Mode Toggle</label>
+  <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+    <path stroke-linecap="round" stroke-linejoin="round" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
+  </svg>
+</div>
+
+<script type="text/javascript">
+  // Update root html class to set CSS colors
+  const toggleDarkMode = () => {
+    const root = document.querySelector('html');
+    root.classList.toggle('dark');
+  }
+
+  // Update local storage value for colorScheme
+  const toggleColorScheme = () => {
+    const colorScheme = localStorage.getItem('colorScheme');
+    if (colorScheme === 'light') localStorage.setItem('colorScheme', 'dark');
+    else localStorage.setItem('colorScheme', 'light');
+  }
+
+  // Set toggle input handler
+  const toggle = document.querySelector('#color-mode-switch input[type="checkbox"]');
+  if (toggle) toggle.onclick = () => {
+    toggleDarkMode();
+    toggleColorScheme();
+  }
+
+  // Check for color scheme on init
+  const checkColorScheme = () => {
+    const colorScheme = localStorage.getItem('colorScheme');
+    // Default to light for first view
+    if (colorScheme === null || colorScheme === undefined) localStorage.setItem('colorScheme', 'light');
+    // If previously saved to dark, toggle switch and update colors
+    if (colorScheme === 'dark') {
+      toggle.checked = true;
+      toggleDarkMode();
+    }
+  }
+  checkColorScheme();
+</script>
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:title" content="" />
+<meta name="twitter:image" content="" />
+
+<h1><a id="the-nature-of-work" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>The Nature of Work</h1>
+<p>If someone were to ask, &quot;How would you explain the fundamental nature of work?&quot; how would you respond? Do you find yourself thinking about this question from time to time? I believe it's an important question, and I imagine you might as well. Like many, I see it as crucial. After all, Americans spend much of their lives working or engaging in work, and at times it can feel as though we're being pulled along by conventions rather than defining work on our own terms.</p>
+<p>If I were to define work, I’d describe it as the effort required to create and provide valued goods and services. This definition, of course, can be expanded and examined from different perspectives.</p>
+<p>For instance, let’s consider income and its relation to work. Income is essentially a price point reflecting how much a firm, society, or government values a person’s work over time. When a firm hires someone, it determines that the value the worker provides within a set period, such as a year, is equal to or greater than the compensation they receive. The firm must measure this value and decide if the pay justifies the work.</p>
+<p>However, the value a worker provides is often subjective. If you're tasked with providing a service or solving a problem within an organization, it’s usually up to you to discern what’s valuable and what isn’t. Employers don’t always state this explicitly, but it becomes your responsibility to seek out, identify, and leverage value within the context of abstract or loosely defined job responsibilities.</p>
+<p>For those aiming to make a substantial impact, it’s crucial to identify the most valuable actions you can take within an organization and leverage them effectively.</p>
+<p>Moreover, as long as you meet your job responsibilities, you generally have the freedom to pursue what you deem valuable—even if your organization doesn’t explicitly prioritize it—so long as it doesn’t conflict with your primary duties. These efforts could be small, yet still complementary to your work.</p>
+<h2><a id="mindfulness-and-work" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>Mindfulness and Work</h2>
+<p>I believe cultivating mindfulness is essential for people to do their best work. Why? Each day presents new opportunities to provide value and apply our skills, knowledge, and talents to the best of our abilities. The work we do in each moment is important, and to do good work in each moment, it's crucial to be fully present.</p>
+<p>There are many ways to cultivate mindfulness, though it can sometimes be challenging. One of my favorite techniques is adopting a “beginner’s mind,” a concept practiced by Jon Kabat-Zinn. He illustrates this with a simple example: imagine you're an alien visiting Earth for the first time, and you’re given a raisin to eat. Since you've never eaten a raisin before, you approach the experience with intense curiosity, exploring every sensation as if it were entirely new. In reality, every moment we encounter is new and unique, and it’s important to recognize this.</p>
+<p>However, work can often feel incredibly repetitive. We show up at the same office or workspace and perform the same tasks day after day. It’s easy to fall into automatic thinking, where we stop appreciating the uniqueness of each moment and lose our sense of curiosity. Over time, this automatic mode can be harmful to our mental health. Workers need to engage with each day, explore its uniqueness, and rediscover a sense of wonder in their environment. If we don't value each day in this way, we risk losing a sense of purpose and meaning in our lives.</p>
+<p>Another challenge is the pace of modern work. Many jobs, especially in working-class environments, demand speed and efficiency, often at the expense of mindfulness. In fast-paced jobs—such as warehouse work, where productivity is relentlessly tracked—workers are often pushed to work faster, relying on automatic thinking to keep up. For some, this may be manageable, but for others, it can take a toll on their mental health. Over time, they may lose the ability to appreciate each day’s uniqueness, which can lead to a loss of meaning in their lives.</p>
+<p>Given these challenges, it’s important to develop strategies for cultivating mindfulness at work, especially in fast-paced environments. One effective method is taking “micro-breaks”—short pauses to reconnect with your breath. Another is using small transitions or routine tasks as opportunities to refocus. You can also practice mindful breathing while working, paying attention to your breath as you complete each task. Or, as I mentioned earlier, use the ‘beginner's mind’ technique with your work. Many workers are allowed to wear earbuds, and sometimes it's easier to mindfully focus on the music you're listening to rather than the repetitive tasks. In fact, this is what many workers do, and it’s beneficial.</p>
+<h2><a id="knowledge-and-work" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>Knowledge and Work.</h2>
