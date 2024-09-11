@@ -1,0 +1,142 @@
+
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<style>
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #1c1c1c;
+        color: white;
+    }
+    .markdown-body table tr {
+        background-color: #1c1c1c;
+    }
+    .markdown-body table tr:nth-child(2n) {
+        background-color: black;
+    }
+}
+</style>
+
+
+
+<link rel="alternate" type="application/rss+xml" href="../../../../feed.xml" title="">
+
+
+
+<link rel="stylesheet" type="text/css" href="../../../../css/common-vendor.b8ecfc406ac0b5f77a26.css">
+<link rel="stylesheet" type="text/css" href="../../../../css/fretboard.f32f2a8d5293869f0195.css">
+<link rel="stylesheet" type="text/css" href="../../../../css/pretty.0ae3265014f89d9850bf.css">
+<link rel="stylesheet" type="text/css" href="../../../../css/pretty-vendor.83ac49e057c3eac4fce3.css">
+<link rel="stylesheet" type="text/css" href="../../../../css/global.css">
+<link rel="stylesheet" type="text/css" href="../../../../css/misc.css">
+
+<script type="text/x-mathjax-config">
+<script>
+MathJax = {
+  tex: {
+    inlineMath: [['$', '$'], ['\(', '\)']]
+  },
+  svg: {
+    fontCache: 'global',
+  }
+};
+</script>
+<script type="text/javascript" id="MathJax-script" async
+  src="../../../../scripts/tex-svg.js">
+</script>
+
+<style>
+</style>
+
+<div id="doc" class="container-fluid markdown-body comment-enabled" data-hard-breaks="true">
+
+<div id="color-mode-switch">
+  <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+    <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
+  </svg>
+  <input type="checkbox" id="switch" />
+  <label for="switch">Dark Mode Toggle</label>
+  <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+    <path stroke-linecap="round" stroke-linejoin="round" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
+  </svg>
+</div>
+
+<script type="text/javascript">
+  // Update root html class to set CSS colors
+  const toggleDarkMode = () => {
+    const root = document.querySelector('html');
+    root.classList.toggle('dark');
+  }
+
+  // Update local storage value for colorScheme
+  const toggleColorScheme = () => {
+    const colorScheme = localStorage.getItem('colorScheme');
+    if (colorScheme === 'light') localStorage.setItem('colorScheme', 'dark');
+    else localStorage.setItem('colorScheme', 'light');
+  }
+
+  // Set toggle input handler
+  const toggle = document.querySelector('#color-mode-switch input[type="checkbox"]');
+  if (toggle) toggle.onclick = () => {
+    toggleDarkMode();
+    toggleColorScheme();
+  }
+
+  // Check for color scheme on init
+  const checkColorScheme = () => {
+    const colorScheme = localStorage.getItem('colorScheme');
+    // Default to light for first view
+    if (colorScheme === null || colorScheme === undefined) localStorage.setItem('colorScheme', 'light');
+    // If previously saved to dark, toggle switch and update colors
+    if (colorScheme === 'dark') {
+      toggle.checked = true;
+      toggleDarkMode();
+    }
+  }
+  checkColorScheme();
+</script>
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:title" content="" />
+<meta name="twitter:image" content="" />
+
+<h1><a id="building-tomorrow-s-transit-why-maryland-needs-a-transportation-reserve-fund-or-infrastructure-bank" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>Building Tomorrow's Transit: Why Maryland Needs a Transportation Reserve Fund or Infrastructure Bank.</h1>
+<p>The State of Maryland needs to develop and utilize tools to save for future transportation projects. Currently, Maryland lacks a mechanism to set aside money each year specifically for future transit projects. While this may seem surprising when looking at the Maryland Transportation Trust Fund (TTF), which is the main fund used to finance transportation projects, revenues typically match expenses on a yearly basis.</p>
+<p>One way to address this is by 1) establishing a Transportation Reserve Fund within the Maryland Transportation Trust Fund (TTF), or 2) creating a Maryland Infrastructure Bank, similar to what other states have done. Alternatively, the state could implement a combination of both. There are pros and cons to each option.</p>
+<p>Large-scale rail and infrastructure projects are financed through a variety of methods. Many states have transportation trust funds that collect revenue from sources like fuel taxes, vehicle fees, and tolls to fund current projects and save for future ones. However, states also finance projects through federal grants, issuing bonds, borrowing, developing public-private partnerships (P3s), and contributions from local governments. Some states even establish separate infrastructure banks.</p>
+<p>Maryland, like many other states, has a Transportation Trust Fund (TTF). However, there are several challenges with the TTF. First, it does not generate enough revenue to fund the large-scale projects Maryland will need in the future. Second, the TTF lacks a designated Transportation Reserve Fund to save for future projects. Currently, the TTF is used primarily to fund ongoing expenses. Additionally, one of the TTF’s main revenue sources, the motor fuel tax, is expected to decline over the next decade as more residents switch to electric vehicles.</p>
+<p>Breakdown of TTF Revenues (FY 2023):<br />
+Revenue Source<br />
+Amount (in billions)<br />
+Motor Fuel Taxes<br />
+$1.24<br />
+Motor Vehicle Fees<br />
+$1.25<br />
+Sales and Use Tax on Vehicles<br />
+$1.2<br />
+Federal Aid<br />
+$1.1<br />
+Toll Revenues<br />
+$0.353<br />
+Other Revenues<br />
+$0.157<br />
+Total Revenue<br />
+$5.3</p>
+<p>Breakdown of TTF Expenditures (FY 2023):<br />
+Expenditure Category<br />
+Amount (in billions)<br />
+Operating Expenses<br />
+$2.25<br />
+Capital Projects<br />
+$2.4<br />
+Debt Service<br />
+$0.6<br />
+Total Expenditures<br />
+$5.25</p>
+<p>One benefit of establishing a Transportation Reserve Fund within the TTF is that it would allow Maryland to save more effectively for future projects. The reserve fund could invest surpluses in low-risk financial products, such as treasury securities, state bonds, or CDs. These investments would compound over time, helping the state responsibly save for future transportation projects. Earmarking these funds for specific purposes would ensure they are available when needed.</p>
+<p>Example:<br />
+Let’s say Maryland had started in 2000 by investing just 1% of TTF revenues—around $50 million per year—into a Transportation Reserve Fund, with a 3% annual return (common with low-risk options like treasury securities). Over 24 years, this fund would have grown to approximately $1.74 billion. If the state had invested 2% of TTF revenues, or about $100 million per year, the fund could have grown to around $3.44 billion.</p>
+<p>The problem isn't just that the TTF lacks a reserve fund; it's also that TTF revenue is projected to decline. By 2031, electric vehicles are expected to account for around 26% of Maryland’s vehicles, leading to a significant drop in fuel tax revenues.</p>
+<p>Maryland should be saving and investing money earmarked for future rail projects. Why? High-quality rail infrastructure directly benefits the state’s budget. Rail projects lead to economic growth, which boosts personal income and property tax revenue. States with robust transportation systems attract companies and workers with higher incomes, which in turn generates more revenue for the state. Additionally, investing in transportation infrastructure is symbolic, much like investing in education—it signals that Maryland is serious about building a better future for the next generation.</p>
+<p>The second option Maryland could consider is setting up a State Infrastructure Bank for transportation projects. Infrastructure banks have advantages and disadvantages compared to reserve funds. Many states have established infrastructure banks, which operate as self-sustaining entities. These banks typically receive an initial capital infusion but do not require ongoing expenses. They can provide loans for rail projects, create revolving funds for future projects, and work in partnership with federal funding and public-private partnerships (P3s). While setting up an infrastructure bank is more complex, it could offer significant long-term benefits.</p>
+<p>In any case, Maryland must choose a strategy. Given the importance of transit projects for future generations, state revenue, and economic growth, Maryland must either create a transportation reserve fund within the TTF earmarked for future projects or establish a state infrastructure bank. The opportunity cost of inaction is too high.</p>
